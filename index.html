@@ -95,12 +95,17 @@
 			var imgs = document.querySelectorAll('.intense');
     		Intense( imgs );
     		var downBtn = $(".down-btn");
+    		var closeBtn = $(".close-btn");
     		var mask = $(".mask");
+    		var pageBottom = $(".page-bottom");
     		downBtn.click(function(event) {
     			mask.addClass('shown');
     		});
     		mask.click(function(event) {
     			$(this).removeClass('shown');
+    		});
+    		closeBtn.click(function(event) {
+    			pageBottom.addClass('hidden');
     		});
 		});
 	</script>
