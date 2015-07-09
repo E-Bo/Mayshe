@@ -243,6 +243,7 @@ body {
     text-align: right;
     outline: none !important;
     border: none !important;
+    cursor: pointer;
   }
     .down-btn span{
       padding: 0.5rem 0.8rem;
@@ -261,6 +262,7 @@ body {
     text-align: center;
     outline: none !important;
     border: none !important;
+    cursor: pointer;
   }
     .close-btn i{
       font-size: 2rem;
