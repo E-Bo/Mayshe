@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>套系介绍</title>
+    <link rel="stylesheet" type="text/css" href="static/css/app.css">
+    <link rel="stylesheet" type="text/css" href="static/css/mayicon.css">
+</head>
+<body>
+	<div style="display:none;">
+		<img src="static/img/app-logo.jpg">
+	</div>
+	<div class="page">
+		<div class="area-container">
+			<div class="area-left">
+				<div class="area-logo logo-1"></div>
+				<span>测试标题</span>
+			</div>
+			<div class="area-right">
+				<span>这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本</span>
+			</div>
+		</div>
+		<div class="area-container">
+			<div class="area-left">
+				<div class="area-logo logo-1"></div>
+				<span>测试标题</span>
+			</div>
+			<div class="area-right">
+				<span>这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本</span>
+			</div>
+		</div>
+		<div class="area-container">
+			<div class="area-left">
+				<div class="area-logo logo-1"></div>
+				<span>测试标题</span>
+			</div>
+			<div class="area-right">
+				<span>这是测试文本这是测试文本这这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本这是测试文本是测试文本这是测试文本这是测试文本这是测试文本这是测试文本</span>
+			</div>
+		</div>
+	</div>
+	<div class="page-bottom">
+		<a class="down-btn">
+			<span>立即下载APP</span>
+		</a>
+		<a class="close-btn">
+			<i class="icon-times-circle-o"></i>
+		</a>
+	</div>
+	<div class="content-container"></div>
+	<div class="mask">
+	</div>
+	<script type="text/javascript" src="static/js/zepto.min.js"></script>
+	<script>
+		$(document).ready(function() {
+    		var downBtn = $(".down-btn");
+    		var closeBtn = $(".close-btn");
+    		var mask = $(".mask");
+    		var pageBottom = $(".page-bottom");
+    		downBtn.click(function(event) {
+    			mask.addClass('shown');
+    		});
+    		mask.click(function(event) {
+    			$(this).removeClass('shown');
+    		});
+    		closeBtn.click(function(event) {
+    			pageBottom.addClass('hidden');
+    		});
+		});
+	</script>
+</body>
+</html>

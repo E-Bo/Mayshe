@@ -243,7 +243,9 @@ body {
     text-align: right;
     outline: none !important;
     border: none !important;
+    border: 0 !important;
     cursor: pointer;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
   }
     .down-btn span{
       padding: 0.5rem 0.8rem;
@@ -262,7 +264,9 @@ body {
     text-align: center;
     outline: none !important;
     border: none !important;
+    border: 0 !important;
     cursor: pointer;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
   }
     .close-btn i{
       font-size: 2rem;
@@ -281,3 +285,54 @@ body {
 .mask.shown{
   display: block;
 }
+
+.content-title{
+  padding: 0.5rem 1.4rem;
+  font-size: 1.4rem;
+  background-color: rgb(255, 145, 100);
+  color: #fff;
+  font-weight: bold;
+}
+.contents{
+  margin-top: 0;
+  padding-left: 3rem;
+  padding-top: 0.2rem;
+}
+  .contents li{
+    font-size: 1.2rem;
+    padding: 0.2rem 0.2rem;
+  }
+.area-container{
+  padding: 1.8rem;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+}
+.area-container:last-child{
+  border-bottom: none;
+}
+  .area-right{
+    margin-left: 30%;
+    padding-left: 1.4rem;
+    font-size: 1.8rem;
+    color: #8a8a8a;
+    line-height: 1.5;
+  }
+  .area-left{
+    float: left;
+    width: 30%;
+    line-height: 1.5;
+    font-size: 2rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-align: center;
+  }
+  .area-logo{
+    width: 100%;
+  }
+  .logo-1{
+    padding: 50% 0;
+    background-image: url('../img/app_logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
