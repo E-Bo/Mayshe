@@ -1,0 +1,247 @@
+html,
+body {
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+}
+html{
+  font-size: 62.5%;
+}
+@media only screen and (min-width:  481px){
+  html{
+    font-size: 94% !important;
+  }
+}
+@media only screen and (min-width:  561px){
+  html{
+    font-size: 109% !important;
+  }
+}
+@media only screen and (min-width:  641px){
+  html{
+    font-size: 125% !important;
+  }
+}
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  background: #eaeaea;
+  color: #4d4d4d;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+.page{
+  padding-bottom: 3rem;
+}
+.header{
+  position: relative;
+  /*max-height: 35vh;
+  margin-top: -5vh;*/
+  max-height: 30vh;
+  overflow: hidden;
+}
+  .header img{
+    display: block;
+    width: 100%;
+  }
+  .header-img{
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    z-index: -1;
+  }
+  .img-place-hold{
+    visibility: hidden;
+  }
+  .header-title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.2rem 1.4rem;
+    height: auto;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    overflow: hidden;
+  }
+  .blur{
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false);
+  }
+.price-container{
+  padding: 1.4rem 1.2rem 0;
+}
+  .price-container > *{
+    display: inline-block;
+  }
+  .price{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: rgb(255, 145, 0);
+  }
+  .pre-price{
+    font-size: 1.2rem;
+    text-decoration: line-through;
+  }
+  .s-count{
+    font-size: 1.4rem;
+    margin-right: 1.5rem;
+    float: right;
+    color: rgb(255, 145, 0);
+  }
+.wrapper{
+  padding: 1rem 1.4rem;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+}
+.expand{
+  position: relative;
+  cursor: pointer;
+}
+  .expand:after{
+    content: '〉';
+    display: block;
+    color: #555;
+    font-size: 1.6rem;
+    font-weight: bold;
+    position: absolute;
+    right: 1.4rem;
+    top: 1.4rem;
+  }
+  .t-title{
+    font-size: 1.4rem;
+  }
+  .t-content{
+    color: #8a8a8a;
+    font-size: 1.2rem;
+  }
+  .m-logo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    float: left;
+  }
+    .m-logo img{
+      width: 100%;
+    }
+    .m-describe-container{
+      padding: 0 1rem;
+      float: left;
+    }
+  .m-id{
+    font-size: 1.6rem;
+    padding: 0.4rem 0;
+  }
+  .m-level{
+    padding: 0 2px;
+    height: 1.5rem;
+    max-height: 1.5rem;
+    color: rgb(255, 145, 0);
+  }
+  .separate{
+    display: inline-block;
+    width: 1px;
+    height: 1.2rem;
+    margin: 0 0.3rem 0 0.6rem;
+    background-color: #ccc;
+    vertical-align: top;
+  }
+  .m-count{
+    position: absolute !important;
+    padding-right: 2rem;
+    right: 1.4rem;
+    height: 5rem;      
+  }
+  .m-count.expand:after{
+    right: 0;
+    top: 50%;
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    -o-transform:translateY(-50%);
+    transform:translateY(-50%);
+  }
+  .m-count span{
+    line-height: 5rem;
+  }
+.overview-container{
+  padding: 1rem 1.4rem;
+}
+  .overview-title{
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+  .overview-list{
+    overflow: hidden;
+  }
+    .overview-item{
+      overflow: hidden;
+      float: left;
+      width: 32%;
+      margin-right: 2%;
+      margin-bottom: 2%;
+      padding: 16% 0;
+      position: relative;
+      background-color: rgba(255,255,255,0.5);
+    }
+      .overview-item img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+      }
+    .overview-item:nth-child(3n){
+      margin-right: 0;
+    }
+.page-bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.8rem;
+  line-height: 3.8rem;
+  background-color: rgba(0,0,0,0.2);
+}
+  .down-btn{
+    display: block;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 56%;
+    right: 15%;
+    cursor: pointer;
+    text-align: right;
+  }
+    .down-btn span{
+      padding: 0.5rem 0.8rem;
+      border-radius: 0.5rem;
+      color: #fff;
+      background-color: rgb(255, 145, 0);
+    }
+  .close-btn{
+    display: block;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 85%;
+    right: 0;
+    cursor: pointer;
+    text-align: center;
+  }
+    .close-btn i{
+      font-size: 2rem;
+      line-height: inherit;
+    }
